@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CineVerse</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <header class="navbar"  hidden>
+
+        <div class="logo">
+
+    <img src="logo1.png" alt="logo">
+
+    NextFrame
+
+</div>
+
+        <nav class="nav-links" >
+
+    <button id="homeBtn">Home</button>
+
+    <button id="trendingBtn">Trending</button>
+
+    <button id="favoritesBtn">Favorites</button>
+
+    <button id="contactBtn">Contact</button>
+
+</nav>
+
+    </header>
+
+
+
+    <!-- LOGIN PAGE -->
+
+    <div class="container" id="home">
+
+        <div class="auth-box">
+
+            <h1>Sign In</h1>
+
+            <p class="subtitle">
+                Welcome back to CineVerse ✨
+            </p>
+
+
+            <!-- INPUTS -->
+
+            <div class="input-group">
+
+                <input 
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
+
+                <input 
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                >
+
+            </div>
+
+
+            <!-- BUTTON -->
+
+            <div class="btn-group">
+
+                <button id="loginBtn" class="login-btn">
+                    Login
+                </button>
+
+            </div>
+
+
+            <!-- CREATE ACCOUNT -->
+
+            <p class="create-text">
+
+                Don’t have an account?
+
+                <span id="signupBtn">
+                    Create Account
+                </span>
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- MOVIE APP -->
+
+    <div id="movieApp" class="movie-app hidden">
+
+
+        <!-- SEARCH BAR -->
+
+        <div class="top-bar">
+<!-- Search Suggestions -->
+            <div class="search-box">
+
+    <input 
+        type="text"
+        id="searchInput"
+        placeholder="Search movies..."
+    >
+
+    <div id="suggestionsBox"></div>
+
+</div>
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </div>
+
+
+        <!-- LOADER -->
+
+        <div id="loader" class="hidden">
+            Loading...
+        </div>
+
+
+        <!-- MOVIES -->
+
+        <div id="movieContainer"></div>
+
+
+
+
+       <!-- TRENDING -->
+
+<section id="trending" class="info-section">
+
+    <h2>
+        Trending Movies 🔥
+    </h2>
+
+    <p>
+        Explore the most popular movies currently trending worldwide.
+    </p>
+
+    <div id="trendingContainer"></div>
+
+</section>
+
+
+
+        <!-- FAVORITES -->
+
+        <section id="favoritesSection">
+
+            <h2 class="section-title">
+                ❤️ Favorite Movies
+            </h2>
+
+            <p class="favorite-text">
+                Your saved movies will appear here ❤️
+            </p>
+
+            <div id="favoriteContainer"></div>
+
+        </section>
+
+
+
+        <!-- CONTACT -->
+
+        <section id="contact" class="info-section">
+
+            <h2>
+                Contact Us 📩
+            </h2>
+
+            <p>
+                Email: cineverse@gmail.com
+            </p>
+
+        </section>
+
+
+    </div>
+
+
+
+    <!-- MOVIE DETAILS MODAL -->
+         <div id="movieModal" class="modal hidden">
+
+         <div class="modal-content"> 
+
+            <span id="closeModal">
+                ✖
+            </span> 
+
+            <div id="modalDetails">
+
+            </div>
+
+        </div>
+
+    </div>
+
+   <!-- TOAST -->
+
+<div id="toast"></div>
+
+
+    <!-- JS FILE -->
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
