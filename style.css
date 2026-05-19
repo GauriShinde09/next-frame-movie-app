@@ -18,17 +18,17 @@ body{
 
     font-family: 'Poppins', sans-serif;
 
-    background: linear-gradient(
+     background: linear-gradient(
         135deg,
-        #fbcfe8,
-        #ddd6fe,
-        #bfdbfe
+        #2d0b45,
+        #111827
     );
 
     min-height: 100vh;
 
     overflow-x: hidden;
     padding: 40px;
+    color:white;
 }
 
 
