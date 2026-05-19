@@ -26,7 +26,7 @@ NextFrame is a modern movie discovery web application built using HTML, CSS, and
 
 ## 🌐 Live Demo
 
-(Add GitHub Pages link later)
+ https://gaurishinde09.github.io/next-frame-movie-app/
 
 ## 👩‍💻 Author
 
